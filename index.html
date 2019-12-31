@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <div class="block">
+        <div class="firstline">
+            <input type="checkbox" id="check" onclick="showHide('block_id')">
+            <label for="check">Для Влады. Нажми и прочти...</label>
+        </div>
+        
+        <div id="block_id" style="display: none;" class="secondline">
+            Привет, Влада!!!<br/>
+            <br/>
+            Если ты читаешь это сообщение, значит у меня накоец получилось сделать это выпадающее меню с фиксацией! Ура, ура, ура!!! 
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="firstline">
+            <input type="checkbox" id="check2" onclick="showHide('block_id2')">
+            <label for="check2">Для Наташи. Нажми и прочти...</label>
+        </div>
+        
+        <div id="block_id2" style="display: none;" class="secondline">
+            Привет, Наташа!!!<br/>
+            <br/>
+            Если ты читаешь это сообщение, значит у меня накоец получилось сделать это выпадающее меню с фиксацией! Ура, ура, ура!!! 
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    </body>
+</html>

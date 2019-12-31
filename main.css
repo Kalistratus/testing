@@ -1,0 +1,61 @@
+.block {
+    margin-bottom: 15px;
+    max-width: 500px;
+}
+
+.block div {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.block .firstline {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.block .firstline::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: black;
+    left: 54px;
+    top: 0;
+}
+
+.block .secondline {
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(151, 187, 67);
+}
+
+input[type=checkbox] {
+        display: none;
+    }
+
+label {
+    font-size: 20px;
+    color: blue;
+}
+
+label::before {
+    content: "−";
+    color: blue;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 100px;
+    position: relative;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    vertical-align: middle;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    }
+
+input[type=checkbox]:checked + label::before {
+        content: "+";
+    }
