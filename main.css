@@ -58,4 +58,10 @@ label::before {
 
 input[type=checkbox]:checked + label::before {
         content: "+";
+        color: red;
+        border-color: red;
+    }
+
+input[type=checkbox]:checked + label {
+    color: red;
     }
